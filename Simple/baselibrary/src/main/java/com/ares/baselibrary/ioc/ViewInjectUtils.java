@@ -1,6 +1,7 @@
 package com.ares.baselibrary.ioc;
 
 import android.app.Activity;
+import android.support.v4.app.Fragment;
 import android.view.View;
 
 import com.ares.baselibrary.ioc.annotation.ContentView;
@@ -22,6 +23,10 @@ public class ViewInjectUtils {
         injectContentView(activity);
         injectViews(activity);
         injectEvent(activity);
+    }
+
+    public static void inject(Fragment fragment){
+
     }
 
     /**

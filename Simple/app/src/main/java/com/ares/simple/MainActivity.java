@@ -27,9 +27,7 @@ public class MainActivity extends ExpandBaseActivtiy {
     }
 
     @Override
-    protected void initTitle() {
-
-    }
+    protected void initTitle() { }
 
     @Override
     protected void initView() {

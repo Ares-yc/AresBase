@@ -1,5 +1,6 @@
 package com.ares.baselibrary;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -44,4 +45,15 @@ public abstract class BaseAcitivity extends AppCompatActivity{
      * 初始化数据
      */
     protected abstract void initData();
+
+    /**
+     * 跳转界面
+     * @param clazz   目标界面
+     * @param bundle  携带数据
+     */
+    protected void  startActivity(Class<?> clazz,Bundle bundle){
+        Intent intent = new Intent(this,clazz);
+        if (bundle != null) intent.putExtras(bundle);
+        startActivity(intent);
+    }
 }
